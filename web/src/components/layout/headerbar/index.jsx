@@ -23,7 +23,7 @@ import { useNotifications } from '../../../hooks/common/useNotifications';
 import { useNavigation } from '../../../hooks/common/useNavigation';
 import NoticeModal from '../NoticeModal';
 import MobileMenuButton from './MobileMenuButton';
-import HeaderLogo from './HeaderLogo';
+import HeaderLogoGIF from './HeaderLogoGIF';
 import Navigation from './Navigation';
 import ActionButtons from './ActionButtons';
 
@@ -37,7 +37,6 @@ const HeaderBar = ({ onMobileMenuToggle, drawerOpen }) => {
     currentLang,
     isLoading,
     systemName,
-    logo,
     isNewYear,
     isSelfUseMode,
     docsLink,
@@ -86,10 +85,9 @@ const HeaderBar = ({ onMobileMenuToggle, drawerOpen }) => {
               t={t}
             />
 
-            <HeaderLogo
+            <HeaderLogoGIF
               isMobile={isMobile}
               isConsoleRoute={isConsoleRoute}
-              logo={logo}
               logoLoaded={logoLoaded}
               isLoading={isLoading}
               systemName={systemName}
